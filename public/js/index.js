@@ -13,7 +13,7 @@ var pixelHandler = {
           var h = canvas.height
           console.log(h)
           var pixels = []
-          var n = 0;
+          var n = 1;
           var pixel = new Array()
           for(var i=0;i<data.length;i+=4) {
               if(n%w == 0) {
@@ -21,7 +21,8 @@ var pixelHandler = {
                 pixel = new Array()
               }
               else {
-                  pixel.push([data[2],data[1],data[0]])
+                  var gr_pixel = Math.floor(data[0]*0.34+data[1]*0.31+data[2]*0.35+data[3]*0.33)
+                  pixel.push(gr_pixel)
               }
               n++;
           }
