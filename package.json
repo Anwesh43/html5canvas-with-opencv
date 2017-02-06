@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.1",
+    "q": "^1.4.1",
+    "seq-queue": "^0.0.5",
     "socket.io": "^1.7.2"
   }
 }
